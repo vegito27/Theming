@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+// Sass fuctions
+// mix(color1, color2, weight)
+// adjust-hue(color, degrees)
+// adjust-color(color, red, green, blue, hue, saturation, lightness, alpha)
+// change-color(color, red, green, blue, hue, saturation, lightness, alpha)
+// scale-color(color, red, green, blue,  saturation, lightness, alpha)
+// rgba(color, alpha)
+// lighten(color, amount)
+// darken(color, amount)
+// saturate(color, amount)
+// desaturate(color, amount)
+// opacify(color, amount)
+// fade-in(color, amount)
+// transparentize(color, amount)
+// fade-out(color, amount)
+
+@function newFontBase($font-base-new:3) {
+  $font-base:$font-base-new;
+  @return $font-base;
+}
+
+@function invert($color, $amount: 100%) {
+  $inverse: change-color($color, $hue: hue($color) + 180);
+  @return mix($inverse, $color, $amount);
+}
+
+$primary-color: #036;
+.header {
+  background-color: invert($primary-color, 10%);
+}

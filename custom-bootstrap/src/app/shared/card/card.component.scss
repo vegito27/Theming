@@ -1,0 +1,67 @@
+@import '../../../styles/variables.scss';
+
+.card{
+  min-width: 320px;
+  max-width:360px;
+  height: 140px;
+  background-color: white;
+  // border: 1px solid black;
+  border-radius: 4px;
+  // box-shadow: 2px 3px 5px var(--shadow-dark-light)
+  box-shadow: 2px 2px 3px 3px var(--shadow-dark-light);
+
+}
+
+.card-content{
+  position: relative;
+  background-color: var( --card-red-light-to-dark);
+  .card-head-content{
+    width: 65%;
+    left: 0;
+    padding: 10px 10px;
+    // background-color: var(--card-red);
+    h2{
+      margin-bottom: 0;
+    }
+  }
+}
+
+ .card-content .card-icons{
+    position: absolute;
+    width: 35%;
+    right: 10px;
+    top: 40px;
+    bottom:0;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    padding: var(--invert-color);
+}
+
+$invert:1;
+html[theme-mode="light-theme"]{
+  $invert:0;
+}
+
+
+html[theme-mode="dark-theme"]{
+  $invert:1;
+}
+
+
+
+.card-content .card-icons{
+  position: absolute;
+  width: 35%;
+  right: 10px;
+  top: 40px;
+  bottom:0;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.invert{
+  filter:brightness(0) invert(1) ;
+}
+

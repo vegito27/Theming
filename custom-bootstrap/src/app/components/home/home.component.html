@@ -1,0 +1,45 @@
+
+<app-sidebar [sidebar]="showSideBar" ></app-sidebar>
+<div style="position: sticky;top:0;z-index: 100;">
+<mat-toolbar class="header" >
+  <button mat-button (click)="toggleSideBar()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-button>
+      <span>Home</span>
+  </button>
+
+  <button mat-button>
+    <span>Profile</span>
+  </button>
+  <button mat-button>
+    <span>Posts</span>
+  </button>
+  <span style="flex:1 1 auto"></span>
+  <!-- <button mat-button (click)="openDialog()">Open</button> -->
+  <!-- <mat-slide-toggle (click)="toggleDarkMode()" [(ngModel)]="isDarkMode">{{isDarkMode?'LightMode':'DarkMode'}}
+  </mat-slide-toggle> -->
+</mat-toolbar>
+</div>
+<div style="position:fixed;right:0;top:10vh;z-index: 100;">
+  <app-custom (changeMode)="changeTheme($event)"></app-custom>
+</div>
+
+<div class="main">
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+    <div class="heading">Analytics Chart<br>
+      <small>Monitor key Metrics.Check reporting and Review Insights</small></div>
+      <div>
+          <app-cards></app-cards>
+      </div>
+
+    <div class="data-content">
+      <div>
+        <app-graph></app-graph>
+      </div>
+      <div>
+
+        <app-table></app-table>
+      </div>
+    </div>
+</div>

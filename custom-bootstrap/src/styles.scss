@@ -1,0 +1,165 @@
+
+// //<!------------------------------------------------------------------------------------------------------------------->
+// // @import 'styles/custom.scss';
+// @import 'styles/bootstrap.scss';
+// @import 'styles/global.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');
+
+
+
+.invert{
+  filter:brightness(0) invert(1) ;
+}
+
+// // html[data-theme="dark"]:root{
+// //   --bs-blue: red;
+// // };
+
+
+// html[data-theme="dark-theme"]:root {
+//   --bs-blue: red;
+//   --bs-indigo: #6610f2;
+//   --bs-purple: #6f42c1;
+//   --bs-pink: #d63384;
+//   --bs-red: #dc3545;
+//   --bs-orange: #fd7e14;
+//   --bs-yellow: #ffc107;
+//   --bs-green: #198754;
+//   --bs-teal: #20c997;
+//   --bs-cyan: #0dcaf0;
+//   --bs-white: #fff;
+//   --bs-gray: #6c757d;
+//   --bs-gray-dark: #020202;
+//   --bs-primary: #01bf86;
+//   --bs-danger: blue;
+//   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+//   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+// }
+
+// a{
+//   text-decoration: none;
+// }
+
+// .text-muted{
+//   color:var(--bs-white)
+// }
+
+// $data-theme:attr(dark-theme);
+
+// $red-color:#565f68;
+// @if $data-theme=="dark-theme" {
+//   $red-color:#c3d3e4;
+// }
+
+
+// // $red-color:#565f68;
+
+// $theme-colors: (
+//   "danger":$red-color,
+//   "rishabh":$red-color
+// );
+
+
+// .text-hightlighted
+// {
+//   color:$red-color
+
+// }
+// p{
+//   font-size: small;
+//   color:#e9eef3
+// }
+
+// // body[data-theme="light-theme"]:root{
+// //   --bs-blue: #0d6efd;
+// //   --bs-indigo: #6610f2;
+// //   --bs-purple: #6f42c1;
+// //   --bs-pink: #d63384;
+// //   --bs-red: #dc3545;
+// //   --bs-orange: #fd7e14;
+// //   --bs-yellow: #ffc107;
+// //   --bs-green: #198754;
+// //   --bs-teal: #20c997;
+// //   --bs-cyan: #0dcaf0;
+// //   --bs-white: #fff;
+// //   --bs-gray: #6c757d;
+// //   --bs-gray-dark: #343a40;
+// //   --bs-primary: #01bf86;
+// //   --bs-danger: blue;
+// //   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// //   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// //   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+// // }
+
+
+
+
+// // $body-bg: #000;
+// // $body-color: #111;
+
+// @import '../node_modules/bootstrap';
+// // .button{
+// //   border: none;
+// //   color: var(--text-white);
+// //   background-color: var(--primary);
+// //   padding: 15px 40px;
+// //   max-width: 100px;
+// //   margin: 50px;
+// //   text-align: center;
+// //   &.blue{
+// //     color:var(--text-white)
+// //   }
+// // }
+
+// @import 'styles/variables.scss';
+
+// .large-icon{
+//   font-size: x-large;
+//   color: var(--primary);
+// }
+
+
+.container-top{
+  width:calc(100% - 280px);
+  float:right;
+  transition: width 20s ease-in;
+}
+
+@import '../src/styles/mat/themes.scss';
+
+
+@import 'styles/variables.scss';
+@import 'styles/custom/custom.scss';
+
+.mat-h4, .mat-subheading-1, .mat-typography h4,.mat-h2, .mat-title, .mat-typography h2,.mat-h1, .mat-headline, .mat-typography h1{
+  font-family: 'Cairo', sans-serif;
+}
+
+
+html[theme-type="custom"]{
+  font-family: 'Cairo', sans-serif;
+  // font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+};
+
+$background-color:#ece8e8;
+
+ $global:var(--theme);
+
+// html[theme="dark"]{
+//   $global:"dark"
+// };
+
+// html[theme="light"]{
+//   $global:"light"
+// }
+
+
+// @import '../../custom-bootstrap/src/styles/bootstrap/bootstrap_customize.scss';
+// @import "../node_modules/bootstrap/scss/bootstrap";

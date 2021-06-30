@@ -1,0 +1,33 @@
+.component{
+  border: 1px solid black;
+  margin-top:100px ;
+  div{
+    margin: auto;
+    width: 80%;
+  }
+
+  div div{
+    display: inline-block;
+    width:200px;
+    height:200px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+
+}
+
+.blue{
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+}

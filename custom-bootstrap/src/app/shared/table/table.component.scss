@@ -1,0 +1,54 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+.data-table{
+  // margin-top: 30px;
+  box-shadow: 1px 1px 3px 3px var(--shadow-dark-light);
+  height: 600px;
+  padding: 20px;
+  background-color: var(--table-light-dark);
+  // color: #000000;
+  h4{
+    // margin: 10px 10px 10px;
+    color: var(--text-130);
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+}
+
+.table{
+  color: var(--text-130);
+}
+
+.table-dark{
+  background-color: #231516;
+}
+
+// .data-table{
+//   width: 100%;
+// }
+
+td i:nth-child(1){
+  color: #dc3545;
+  opacity: 0.9;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+}
+
+td i:nth-child(2){
+  color: dodgerblue;
+  cursor: pointer;
+}
+td{
+  font-weight: 100;
+}
+
+th{
+  font-weight: bolder;
+  font-size: 16px;
+  // color: black ;
+}
+
+// .table-dark{
+//   background-color:#000000b8
+// }

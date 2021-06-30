@@ -1,0 +1,71 @@
+ul{
+  width:90%;
+  margin: auto;
+
+  svg{
+    margin-right: 0.5em;
+  }
+}
+
+
+li{
+  list-style-type: none;
+  width: 100%;
+  // padding:20px 0;
+  cursor: pointer;
+  text-align: justify;
+  border-radius: 0.4em;
+
+  &:hover{
+    background-color: var(--primary);
+    color:white;
+  }
+}
+
+.sidebar{
+  width: 280px;
+  min-width: 250px;
+  max-width:280px;
+  background-color: var(--card-background) !important;
+  box-sizing: 0 0 1px white;
+  // border: 1px solid white;
+  height:calc(100vh - 64px);
+  color: var(--text-130);
+  z-index: 100;
+  margin-top: 66px;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+}
+
+span
+{
+  font-size: 24px;
+}
+
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: .25rem;
+}
+.nav-link {
+  display: block;
+  padding: .8rem 1.2rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+hr{
+  margin: 15px 0;
+  font-weight: 100;
+  color: var(--sub-text-50);
+}
+
+.abs-hr{
+  position: absolute;
+  bottom:8vh;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+

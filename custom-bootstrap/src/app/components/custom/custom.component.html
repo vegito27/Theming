@@ -1,0 +1,65 @@
+<!-- <p>custom works!</p>
+<div>
+  <h1>H1</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+  <h4>H4</h4>
+  <h5>H5</h5>
+  <h6>H6</h6>
+  <p>this is P</p>
+  <span>Span</span>
+</div> -->
+
+<div style="position: relative;height: 800px;">
+  <div class="re-position">
+    <div class="options">
+
+      <div class="extra-pad" [ngClass]="showOptions?'show':'hide'" (click)="showOption()">
+        <div id="right-aligned" [ngClass]="isDarkmode?'invert':''" class="rotating"> </div>
+      </div>
+
+      <div class="box" [ngClass]="showOptions?'hide':'show'">
+        <div class="cross" (click)='showOptions=!showOptions'></div>
+        <h3 class="bold">Select Themes</h3>
+        <hr>
+        <div class="inputs">
+          <div class="custom-input">
+            <label>Custom</label>
+            <input name="custom" [checked]="custom_theme" (change)='selectTheme($event)' type="radio">
+          </div>
+
+          <div class="boot-input">
+            <label>Bootstrap</label>
+            <input name="bootstrap" [checked]="bootstrap_theme" (change)='selectTheme($event)' type="radio">
+          </div>
+
+          <div class="mat-input">
+            <label>Material</label>
+            <input name="material" [checked]="material_theme" (change)='selectTheme($event)' type="radio">
+          </div>
+
+        </div>
+        <hr>
+        <div>
+          <div class="no-margin">Choose Base Color</div>
+          <!-- <div class="color-wrapper">
+              <div class="selected"></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div> -->
+          <app-colors></app-colors>
+        </div>
+        <hr>
+        <div class="select-mode">
+          <div>Light Mode</div>
+          <div>
+            <mat-slide-toggle (change)="toggleDarkMode()"></mat-slide-toggle>
+          </div>
+          <div>Dark Mode</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

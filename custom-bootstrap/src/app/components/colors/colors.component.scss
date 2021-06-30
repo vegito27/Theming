@@ -1,0 +1,44 @@
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-wrapper{
+  @include center;
+  .div{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+   box-shadow: 0 0 1px rgba(0,0,0.1);
+    margin:0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    &.selected{
+      opacity: 0.8;
+      transform: scale(1.2);
+      box-shadow: 1px 0 2px var(--text);
+    }
+  }
+
+  .class-1{
+    background-color: red;
+  }
+  .class-2{
+    background-color: yellow;
+  }
+  .class-3{
+    background-color: blue;
+  }
+  .class-4{
+    background-color: green;
+  }
+  .class-5{
+    background-color: orange;
+  }
+  .class-6{
+    background-color: #fff;
+  }
+  padding-bottom:10px ;
+}
