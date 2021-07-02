@@ -1,4 +1,4 @@
-html[theme-mode="light-theme"][theme-type="custom"]{
+:root{
   --primary:                    #007bff;
   --primary-60:                 #66e3c4;
   --primary-10:                 #e5faf5;
@@ -50,145 +50,127 @@ html[theme-mode="light-theme"][theme-type="custom"]{
   --constant-half-transparent:  rgba(213,84,56,0.05);
   --constant-secondary-clr-180: #2a2a2a;
   --constant-secondary-clr-10:  #f6f6f7;
-
   --card-background:            #fff;
   --background:                 #e8eef6;
+  // Body Background Colors
+  --primary-bg-red:             #f5eeee45;
+  --primary-bg-yellow:          #f7f7bb33;
+  --primary-bg-blue:            #d1d1e638;
+  --primary-bg-green:           #82ec8212;
+  --primary-bg-orange:          #ff98001c;
+  --primary-bg-white:           whitesmoke;
   // ----------------------------------------------------------//
-  --image-brightnes             :1;
-  --inverter:                   var(--text);
-  --light-theme:false;
-  --card-red:#f8efef45;
-  --invert-color:0;
-  --card-red-light-to-dark:#ef9d9d0d;
-  --shadow-dark-light:(253 253 253 / 10%);
-  --card-container-light-dark:rgb(238, 230, 230);
-  --border-dark-light:#000;
-  --text-constant-130:var(--text-130);
-  --table-light-dark:#f9f9f9;
-  --graph-light-dark:#fafafac4;
+  // --image-brightnes             :1;
+  // --inverter:                   var(--text);
+  // --light-theme:false;
+  // --card-red:#f8efef45;
+  // --invert-color:0;
+  // --card-red-light-to-dark:#ef9d9d0d;
+  // --shadow-dark-light:(253 253 253 / 10%);
+  // --card-container-light-dark:rgb(238, 230, 230);
+  // --border-dark-light:#000;
+  // --text-constant-130:var(--text-130);
+  // --table-light-dark:#f9f9f9;
+  // --graph-light-dark:#fafafac4;
 
 };
 
-$font-base:3px;
-$margin-base:1px;
+// $font-base:3px;
+// $margin-base:1px;
 
-$font-h1:$font-base*10;
-$margin-h1:(50-$font-h1)/2;
+// $font-h1:$font-base*10;
+// $margin-h1:(50-$font-h1)/2;
 
-$font-h2:$font-base*9;
-$margin-h2:(50-$font-h2)/2;
+// $font-h2:$font-base*9;
+// $margin-h2:(50-$font-h2)/2;
 
-$font-h3:$font-base*8;
-$margin-h3:(50-$font-h3)/2;
+// $font-h3:$font-base*8;
+// $margin-h3:(50-$font-h3)/2;
 
-$font-h4:$font-base*7;
-$margin-h4:(50-$font-h4)/2;
+// $font-h4:$font-base*7;
+// $margin-h4:(50-$font-h4)/2;
 
-$font-h5:$font-base*6;
-$margin-h5:(50-$font-h5)/2;
+// $font-h5:$font-base*6;
+// $margin-h5:(50-$font-h5)/2;
 
-$font-h6:$font-base*5;
-$margin-h6:(50-$font-h6)/2;
+// $font-h6:$font-base*5;
+// $margin-h6:(50-$font-h6)/2;
 
-$font-p:$font-base*5;
-$margin-p:$font-p;
-
-
-html[theme-mode="dark-theme"][theme-type="custom"] {
---primary:                    #00d09c;
---primary-60:                 #0b5e49;
---primary-10:                 #0e231e;
+// $font-p:$font-base*5;
+// $margin-p:$font-p;
 
 
---secondary:                  #98a4ff;
---secondary-150:              #1e2232;
---secondary-130:              #323c89;
---secondary-60:               #181a2a;
---secondary-30:               #181a2a;
+// html[theme-mode="dark-theme"][theme-type="custom"] {
+// --primary:                    #00d09c;
+// --primary-60:                 #0b5e49;
+// --primary-10:                 #0e231e;
 
---yellow:                     #e7a61a;
---yellow-10:                  #2e2105;
---yellow-05:                  #222c35;
 
---red:                        #d55438;
---red-10:                     #2a0f09;
---red-05:                     rgba(213,84,56,0.05);
+// --secondary:                  #98a4ff;
+// --secondary-150:              #1e2232;
+// --secondary-130:              #323c89;
+// --secondary-60:               #181a2a;
+// --secondary-30:               #181a2a;
 
---border:                     #2a2a2a;
+// --yellow:                     #e7a61a;
+// --yellow-10:                  #2e2105;
+// --yellow-05:                  #222c35;
 
---icon-light:                 #7c7e8c;
---icon-medium:                #404042;
---icon-strong:                #2a2a2a;
---box-shadow:                 rgba(0,0,0,0.6);
+// --red:                        #d55438;
+// --red-10:                     #2a0f09;
+// --red-05:                     rgba(213,84,56,0.05);
 
---text-130:                   #ebebf5;
---text:                       #dcdcdd;
+// --border:                     #2a2a2a;
 
---sub-text:                   #ebebf5;;
---sub-text-30:                #e2ebf14f;
---sub-text-50:                #7c7e8c;
---sub-text-70:                #2a2a2a;
+// --icon-light:                 #7c7e8c;
+// --icon-medium:                #404042;
+// --icon-strong:                #2a2a2a;
+// --box-shadow:                 rgba(0,0,0,0.6);
 
---primary-bg:                 #121212;
---secondary-bg:               #2a2a2a;
---tertiary-bg:                #2a2a2a;
---quaternar-bg:               #1d1d1d;
---preloader-bg:               #2a2a2a;
+// --text-130:                   #ebebf5;
+// --text:                       #dcdcdd;
 
---ripple-normal:              hsla(0,0%,100%,0.1);
---constant-yellow-150:        #d2ab66;
---constant-text:              #44475b;
---constant-text-120:          #191c27;
---constant-subtext-10:        #636464;
---constant-white:             #ebebf5;
---constant-transparent:       transparent;
---constant-half-transparent:  rgba(0,0,0,0.5);
---constant-secondary-clr-180: #2a2a2a;
---constant-secondary-clr-10:  #2a2a2a;
+// --sub-text:                   #ebebf5;;
+// --sub-text-30:                #e2ebf14f;
+// --sub-text-50:                #7c7e8c;
+// --sub-text-70:                #2a2a2a;
 
---card-background:            #1d1d1d;
---background:                 #1d1d1d;
+// --primary-bg:                 #121212;
+// --secondary-bg:               #2a2a2a;
+// --tertiary-bg:                #2a2a2a;
+// --quaternar-bg:               #1d1d1d;
+// --preloader-bg:               #2a2a2a;
 
---half:0.9;
---inverter:                   var(--sub-text-70);
---light-theme:false;
---border:#fff;
---card-red:#3a3434;
---invert-color:1;
---card-red:    rgb(104, 86, 86);
---card-red-light-to-dark:#150303e5;
---shadow-dark-light:rgba(0,0,0,0.1);
---card-container-light-dark:rgb(4 3 3 / 93%);
---border-dark-light:#fff;
---text-constant-130:#44475b;
---table-light-dark:#231516;
---graph-light-dark:#2d1d1d;;
+// --ripple-normal:              hsla(0,0%,100%,0.1);
+// --constant-yellow-150:        #d2ab66;
+// --constant-text:              #44475b;
+// --constant-text-120:          #191c27;
+// --constant-subtext-10:        #636464;
+// --constant-white:             #ebebf5;
+// --constant-transparent:       transparent;
+// --constant-half-transparent:  rgba(0,0,0,0.5);
+// --constant-secondary-clr-180: #2a2a2a;
+// --constant-secondary-clr-10:  #2a2a2a;
 
-}
+// --card-background:            #1d1d1d;
+// --background:                 #1d1d1d;
 
-body[data-theme="custom"]{
---blue: #007bff;
---indigo: #6610f2;
---purple: #6f42c1;
---pink: #e83e8c;
---red: #dc3545;
---orange: #fd7e14;
---yellow: #ffc107;
---green: #28a745;
---teal: #20c997;
---cyan: #17a2b8;
---white: #fff;
---gray: #6c757d;
---gray-dark: #343a40;
---primary: #007bff;
---secondary: #6c757d;
---success: #28a745;
---info: #17a2b8;
---warning: #ffc107;
---danger: #dc3545;
---light: #f8f9fa;
---dark: #343a40;
-}
+// --half:0.9;
+// --inverter:                   var(--sub-text-70);
+// --light-theme:false;
+// --border:#fff;
+// --card-red:#3a3434;
+// --invert-color:1;
+// --card-red:    rgb(104, 86, 86);
+// --card-red-light-to-dark:#150303e5;
+// --shadow-dark-light:rgba(0,0,0,0.1);
+// --card-container-light-dark:rgb(4 3 3 / 93%);
+// --border-dark-light:#fff;
+// --text-constant-130:#44475b;
+// --table-light-dark:#231516;
+// --graph-light-dark:#2d1d1d;;
+
+// }
 
 
 // How to create variables

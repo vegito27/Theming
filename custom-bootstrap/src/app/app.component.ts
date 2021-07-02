@@ -17,5 +17,4 @@ export class AppComponent {
     this.isDarkMode=this.themeservice.isDarkMode()
   }
 
-
 }

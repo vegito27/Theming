@@ -15,7 +15,12 @@ li{
   cursor: pointer;
   text-align: justify;
   border-radius: 0.4em;
-
+  a {
+    color:var(--text-130);
+    &:hover{
+      color: white;
+    }
+  }
   &:hover{
     background-color: var(--primary);
     color:white;
@@ -34,6 +39,7 @@ li{
   z-index: 100;
   margin-top: 66px;
   box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+  overflow: hidden;
 }
 
 span

@@ -128,15 +128,23 @@
   transition: width 20s ease-in;
 }
 
-@import '../src/styles/mat/themes.scss';
+// @import '../src/styles/mat/themes.scss';
+// @import 'styles/variables.scss';
+// @import 'styles/custom/custom.scss';
+// @import 'styles/custom/custom_body.scss';
 
-
-@import 'styles/variables.scss';
-@import 'styles/custom/custom.scss';
 
 .mat-h4, .mat-subheading-1, .mat-typography h4,.mat-h2, .mat-title, .mat-typography h2,.mat-h1, .mat-headline, .mat-typography h1{
   font-family: 'Cairo', sans-serif;
 }
+
+
+
+
+  @import '../src/styles/mat/themes.scss';
+  @import 'styles/variables.scss';
+  @import 'styles/custom/custom.scss';
+  @import 'styles/custom/custom_body.scss';
 
 
 html[theme-type="custom"]{
@@ -160,6 +168,6 @@ $background-color:#ece8e8;
 //   $global:"light"
 // }
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../../custom-bootstrap/src/styles/bootstrap/bootstrap_customize.scss';
 
-// @import '../../custom-bootstrap/src/styles/bootstrap/bootstrap_customize.scss';
-// @import "../node_modules/bootstrap/scss/bootstrap";

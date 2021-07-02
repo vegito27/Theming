@@ -1,15 +1,15 @@
 @import '../../../styles/variables.scss';
 
-.card{
+.card-user{
   min-width: 320px;
   max-width:360px;
   height: 140px;
   background-color: white;
   // border: 1px solid black;
-  border-radius: 4px;
-  // box-shadow: 2px 3px 5px var(--shadow-dark-light)
-  box-shadow: 2px 2px 3px 3px var(--shadow-dark-light);
-
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 3px 5px var(--shadow-dark-light)
+  // box-shadow: 2px 2px 3px 3px var(--shadow-dark-light);
 }
 
 .card-content{
@@ -36,6 +36,10 @@
     width: 60px;
     margin: 0 auto;
     padding: var(--invert-color);
+    filter: invert(48%) sepia(91%) saturate(5207%) hue-rotate(-310deg) brightness(95%) contrast(80%);
+    //  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    // filter: brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    // filter:grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
 }
 
 $invert:1;

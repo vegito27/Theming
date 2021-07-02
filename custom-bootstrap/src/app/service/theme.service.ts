@@ -65,7 +65,7 @@ export class ThemeService {
 
   select(value:any,previous:number){
     this.renderer.addClass(document.getElementById(`${value}`),'selected')
-    let code=(value.split('-')[1])
+    this.renderer.setAttribute(document.documentElement,'theme-color',`${value}`)
     this.renderer.setAttribute(document.body,'theme-color',`${value}`)
     this.renderer.removeClass(document.getElementById(`${previous}`),'selected')
   }

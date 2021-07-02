@@ -1,0 +1,14 @@
+body[theme-color='class-6']{
+  --image-brightnes             :1;
+  --inverter:                   var(--text);
+  --light-theme:false;
+  --card-red:var(--light);
+  --invert-color:0;
+  --card-red-light-to-dark:var(--light);
+  --shadow-dark-light:(253 253 253 / 10%);
+  --card-container-light-dark:var(--light);
+  --border-dark-light:$gray-900;
+  --text-constant-130:var(--text-130);
+  --table-light-dark:#f9f9f9;
+  --graph-light-dark:#fafafac4;
+}

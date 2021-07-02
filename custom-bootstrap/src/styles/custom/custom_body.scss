@@ -1,50 +1,29 @@
 
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-1']{
-  background-color: #f5eeee45
-}
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-2']
-{
-  background-color:#f7f7bb33
-}
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-3']
-{
-  background-color:#d1d1e638
-}
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-4']
-{
-  background-color:#82ec8212
-}
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-5']
-{
-  background-color:#ff98001c
-}
-html[theme-type='custom'][theme-mode='light-theme'] body[theme-color='class-6']{
-  background-color: whitesmoke;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-1']{
-  background-color: #1f1616bf
+html[theme-type='custom']body[theme-color='class-1']{
+  background-color: var(--primary-bg-red);
+  color: var(--text);
 }
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-2']
+html[theme-type='custom'] body[theme-color='class-2']
 {
-  background-color:#5a5a2bde
+  background-color:var(--primary-bg-yellow)
 }
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-3']
+html[theme-type='custom'] body[theme-color='class-3']
 {
-  background-color:#030317ba
+  background-color:var(--primary-bg-blue)
 }
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-4']
+html[theme-type='custom']  body[theme-color='class-4']
 {
-  background-color:#3a4a3af7
+  background-color:var(--primary-bg-green)
 }
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-5']
+html[theme-type='custom']  body[theme-color='class-5']
 {
-  background-color:#422b0ad4
+  background-color:var(--primary-bg-orange)
 }
-html[theme-type='custom'][theme-mode='dark-theme'] body[theme-color='class-6']{
-  background-color: #4e4d4df2;
+html[theme-type='custom'] body[theme-color='class-6']{
+  background-color:var(--primary-bg-white);
 }
-
-
-

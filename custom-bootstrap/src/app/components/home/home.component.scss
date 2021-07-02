@@ -1,5 +1,5 @@
 
- @import '../../../styles/variables.scss';
+//  @import '../../../styles/variables.scss';
 //  @import '../../../styles/custom.scss';
 
 .bg-img-1 {
@@ -23,9 +23,9 @@
   display: table-cell;
   vertical-align:middle
 }
-.text-white {
-  color: #fff !important;
-}
+// .text-white {
+//   color: #fff !important;
+// }
 
 .bg-light-h {
   background-color: var(--background) !important;
@@ -66,8 +66,6 @@
   font-size: 15px;
 }
 
-
-
 .btn-h {
   background-color: var(--primary);
   color:white;
@@ -94,6 +92,7 @@
   color: var(--primary) !important;
   box-shadow: none !important
 }
+
 .container-h{
 max-width: 960px;
 }
@@ -200,7 +199,6 @@ img{
   }
   div:nth-child(1){
     margin-right:10px ;
-
   }
 }
 
