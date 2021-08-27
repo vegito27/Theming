@@ -1,0 +1,16 @@
+html[theme='custom'][theme-mode='dark']{
+  --body:black,
+  --header:red,
+  --background:#f2f2f2
+  --text-light:white;
+  --text-dark:black
+}
+
+
+html[theme='custom'][theme-mode='light']{
+  --body:#fff,
+  --header:red,
+  --background:#f2f2f2
+  --text-light:black;
+  --text-dark:white
+}

@@ -1,0 +1,33 @@
+
+@import './styles/material/theme';
+@import './styles/a-components/dashboard.scss';
+@import './styles/a-components/headers/headers.scss';
+@import './styles/common-styles.scss';
+
+
+html[theme='custom'][theme-mode='dark']{
+  --body:black;
+  --header:rgb(31, 13, 13);
+  --background:#7e7a7a;
+  --text-dark:black;
+  --text-light:white;
+  --sidebar:rgba(51, 50, 50, 0.87);
+  --body-bg:#272626;
+  --hover-color:#dfdddd;
+  --options-bar:#5a5a5a;
+  --list-hover:black;
+}
+
+
+html[theme='custom'][theme-mode='light']{
+  --body:#fff;
+  --header:rgb(255 254 254);
+  --background:#f2f2f2;
+  --text-dark:black;
+  --text-light:rgb(41, 39, 39);
+  --sidebar:rgba(177, 176, 176, 0.87);
+  --body-bg:rgb(245, 244, 244);
+  --hover-color:rgb(61, 60, 60);
+  --list-hover:white;
+  --options-bar:rgb(235, 232, 232);
+}

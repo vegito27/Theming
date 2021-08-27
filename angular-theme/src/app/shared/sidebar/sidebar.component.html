@@ -1,0 +1,70 @@
+<div class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-list-img"><img class='flex-center' src="assets/Images/angular.png"></li>
+    <li class="sidebar-list-item" (click)='enableList(0)'><img class="image-icon" src="assets/Images/performance.png"><a >Dashboard</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[0]' >
+        <div class="dashboard-options">
+          <ul class='options-list'>
+            <li>E-Commerce</li>
+            <li>CRM</li>
+          </ul>
+        </div>
+      </div>
+    <li (click)='enableList(1)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/forms.png"><a >Forms</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[1]' >
+        <div class="forms-options" >
+          <ul  class='options-list'>
+            <li>Control & Validations</li>
+            <li>Extended Cotrols</li>
+            <li>Sample  Layout</li>
+            <li>Material Forms</li>
+            <li> Stepper Wizard</li>
+          </ul>
+        </div>
+      </div>
+    <li (click)='enableList(2)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/table.png"><a >Table</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[2]' >
+        <div class="table-options" >
+          <ul class='options-list'>
+            <li>Regular Tables</li>
+            <li>Extended Tables</li>
+            <li>Smart Tables</li>
+            <li>Table With Filters</li>
+          </ul>
+        </div>
+      </div>
+    <li  (click)='enableList(3)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/bar-chart.png"><a >Charts</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[3]' >
+        <div class="chart-options" >
+          <ul class='options-list'>
+            <li>E-Charts</li>
+            <li> Chartjs</li>
+            <li>NGx Charts</li>
+          </ul>
+        </div>
+      </div>
+    <li  (click)='enableList(4)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/setting.png"><a >Utilities</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf="sidebarList[4]">
+        <div class="utilities-options" >
+          <ul class='options-list'>
+            <li>Notifications</li>
+            <li> Modals</li>
+            <li>File Uploader</li>
+            <li>Autocomplete</li>
+            <li>Alerts</li>
+          </ul>
+        </div>
+      </div>
+    <li class="sidebar-list-item" (click)='enableList(5)' ><img class="image-icon" src="assets/Images/dashboard.png"><a >Components</a></li>
+      <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[5]' >
+        <div class="utilities-options" >
+          <ul class='options-list'>
+            <li>List</li>
+            <li> Card</li>
+            <li>Carousal</li>
+            <li>Tabset</li>
+          </ul>
+        </div>
+      </div>
+  </ul>
+</div>

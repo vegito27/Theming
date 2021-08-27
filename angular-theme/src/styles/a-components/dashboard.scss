@@ -1,0 +1,16 @@
+.dashboard{
+  width: calc(100vw - 250px);
+  background-color: var(--body-bg);
+  height: 100vh;
+  transition: width 1s ease;
+}
+
+.dashboard-100{
+  @extend .dashboard;
+  width: 100vw;
+  transition: width 1s ease;
+}
+
+.options-list{
+  background-color: var(--background);
+}
