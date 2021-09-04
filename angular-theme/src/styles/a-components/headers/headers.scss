@@ -17,8 +17,9 @@
 
 .header{
   background-color: var(--header);
-  color: var(--text-light)
+  color: var(--text-light);
 }
+
 
 .flex-center{
   @include flexPosition(center);
@@ -28,3 +29,5 @@
 {
   cursor: pointer;
 }
+
+

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ComponentsService } from 'src/app/services/components.service';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,7 +9,7 @@ import { ComponentsService } from 'src/app/services/components.service';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private components:ComponentsService) { }
+  constructor(private components:ComponentsService,private themeService:ThemeService) { }
   isSideBar!:boolean;
   sidebarList=[false,false,false,false,false,false]
   currentIndex:any;

@@ -1,5 +1,5 @@
-<div class="optionsbar" *ngIf="open">
-  <div (click)="settle()"><img src="assets/Icons/close.png" style="width: 12px;height: 12px;padding-left:5px;padding-top: 10px;cursor: pointer;"></div>
+<div *ngIf="open" class="optionsbar">
+  <div  (click)="settle()"><img src="assets/Icons/close.png" style="width: 12px;height: 12px;padding-left:5px;padding-top: 10px;cursor: pointer;"></div>
   <div style="display:flex;justify-content:space-around; width:60%;margin:auto">
     <div><img src="assets/Icons/bootstrap.svg" style="width: 40px;height: 40px;padding-right:15px;padding-top: 10px;cursor: pointer;"></div>
     <div><img src="assets/Icons/material-logo.svg" style="width: 55px;height: 55px;padding-left:5px;padding-top: 10px;cursor: pointer;"></div>
@@ -44,6 +44,7 @@
         </div>
     </div>
     <hr>
+    <app-layout></app-layout>
   </div>
   </div>
 </div>

@@ -2,6 +2,8 @@
 @import './styles/material/theme';
 @import './styles/a-components/dashboard.scss';
 @import './styles/a-components/headers/headers.scss';
+@import './styles/a-components/sidebar/sidebar.scss';
+@import './styles/a-components/sidebar/transitions.scss';
 @import './styles/common-styles.scss';
 
 
@@ -13,7 +15,7 @@ html[theme='custom'][theme-mode='dark']{
   --text-light:white;
   --sidebar:rgba(51, 50, 50, 0.87);
   --body-bg:#272626;
-  --hover-color:#dfdddd;
+  --hover-color:rgb(61, 60, 60);
   --options-bar:#5a5a5a;
   --list-hover:black;
 }
@@ -24,10 +26,10 @@ html[theme='custom'][theme-mode='light']{
   --header:rgb(255 254 254);
   --background:#f2f2f2;
   --text-dark:black;
-  --text-light:rgb(41, 39, 39);
-  --sidebar:rgba(177, 176, 176, 0.87);
+  --text-light:black;
+  --sidebar:rgba(255, 255, 255, 0.87);
   --body-bg:rgb(245, 244, 244);
-  --hover-color:rgb(61, 60, 60);
+  --hover-color:white;
   --list-hover:white;
   --options-bar:rgb(235, 232, 232);
 }

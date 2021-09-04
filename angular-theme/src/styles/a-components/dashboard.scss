@@ -1,5 +1,5 @@
 .dashboard{
-  width: calc(100vw - 250px);
+  width: calc(100vw - 280px);
   background-color: var(--body-bg);
   height: 100vh;
   transition: width 1s ease;
@@ -13,4 +13,9 @@
 
 .options-list{
   background-color: var(--background);
+}
+
+.display-flex
+{
+  display: flex;
 }

@@ -19,18 +19,32 @@ export class ThemeService {
    }
 
    updateTheme(theme:'dark' | 'light'){
-    //  this.setColorTheme(theme)
      const previousColorTheme=(theme==='dark' ? 'light':'dark')
-    //  this.renderer.removeClass(document.body,previousColorTheme)
-    //  this.renderer.addClass(document.body,theme)
-
      if(previousColorTheme!=='dark'){
-      // this.renderer.addClass(document.getElementById('button'),'my-button')
       this.renderer.setAttribute(document.documentElement,'theme-mode','dark')
      }else{
-      // this.renderer.removeClass(document.getElementById('button'),'my-button')
       this.renderer.setAttribute(document.documentElement,'theme-mode','light')
      }
+   }
+
+   updateLayout(type:number){
+    switch(type){
+      case 0:
+        this.renderer.setAttribute(document.getElementsByClassName('sidebar')[0],'layout',`${type}`);
+        break;
+      case 1:
+        this.renderer.setAttribute(document.getElementsByClassName('sidebar')[0],'layout',`${type}`);
+        break;
+      case 2:
+        this.renderer.setAttribute(document.getElementsByClassName('sidebar')[0],'layout',`${type}`);
+        break;
+      case 3:
+        this.renderer.setAttribute(document.getElementsByClassName('sidebar')[0],'layout',`${type}`);
+        break;
+      default :
+       this.renderer.setAttribute(document.getElementsByClassName('sidebar')[0],'layout',`${0}`);
+       break;
+      }
    }
 
    isDarkMode(){

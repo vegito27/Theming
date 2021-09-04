@@ -1,0 +1,41 @@
+[layout="1"].transition {
+  &-in {
+    width:0px;
+    transform: translateX(-280px);
+    transition: all 0.6s ease;
+  }
+  &-out {
+    width: 280px;
+    transform: translateX(0px);
+    transition: all 0.6s ease;
+  }
+}
+
+
+[layout="0"].transition {
+  &-in {
+    width:100px;
+    ul{
+      .sidebar-list-img{
+        img{
+            padding-left: 30px;
+        }
+      }
+      .sidebar-list-item{
+        &::after,a{
+          display: none;
+          transition: width 0.3s ease-in;
+        }
+        &-options{
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-out{
+    width: 280px;
+    transform: translateX(0px);
+    transition: all 0.4s ease;
+  }
+}

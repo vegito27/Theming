@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { ComponentsService } from 'src/app/services/components.service';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
@@ -8,17 +9,25 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class OptionsbarComponent implements OnInit {
 
-  constructor(private themeservice:ThemeService) { }
+  constructor(private themeservice:ThemeService,private componentService:ComponentsService) { }
   open:boolean=true
   isDarkMode=false
+  @Input() optionsBar!:boolean;
+  @Output()
 
 
   ngOnInit(): void {
+    this.componentService.isOptionBarVisible.subscribe(data=>{
+      this.open=data
+    })
   }
 
   settle(){
-    this.open=false
+    this.open=!this.open
+    this.componentService.isOptionBarVisible.next(this.open)
   }
+
+
 
   check(event:any){
     this.isDarkMode=event.target.checked
@@ -28,5 +37,7 @@ export class OptionsbarComponent implements OnInit {
       this.themeservice.updateTheme("light")
     }
   }
+
+
 
 }

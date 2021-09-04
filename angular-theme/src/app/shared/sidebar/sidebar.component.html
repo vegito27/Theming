@@ -1,7 +1,9 @@
-<div class="sidebar">
+<div class="sidebar"  [ngClass]="isSideBar?'transition-in':'transition-out'">
   <ul class="sidebar-list">
     <li class="sidebar-list-img"><img class='flex-center' src="assets/Images/angular.png"></li>
-    <li class="sidebar-list-item" (click)='enableList(0)'><img class="image-icon" src="assets/Images/performance.png"><a >Dashboard</a></li>
+    <li class="sidebar-list-item" (click)='enableList(0)'>
+      <img class="image-icon" src="assets/Images/performance.png">
+      <div><a >Dashboard</a></div></li>
       <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[0]' >
         <div class="dashboard-options">
           <ul class='options-list'>
@@ -10,7 +12,7 @@
           </ul>
         </div>
       </div>
-    <li (click)='enableList(1)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/forms.png"><a >Forms</a></li>
+    <li (click)='enableList(1)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/forms.png"> <div><a >Forms</a></div></li>
       <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[1]' >
         <div class="forms-options" >
           <ul  class='options-list'>
@@ -22,7 +24,7 @@
           </ul>
         </div>
       </div>
-    <li (click)='enableList(2)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/table.png"><a >Table</a></li>
+    <li (click)='enableList(2)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/table.png"> <div><a >Table</a></div></li>
       <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[2]' >
         <div class="table-options" >
           <ul class='options-list'>
@@ -33,7 +35,7 @@
           </ul>
         </div>
       </div>
-    <li  (click)='enableList(3)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/bar-chart.png"><a >Charts</a></li>
+    <li (click)='enableList(3)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/bar-chart.png"> <div><a >Charts</a></div></li>
       <div class="sidebar-list-item-options display-block" *ngIf='sidebarList[3]' >
         <div class="chart-options" >
           <ul class='options-list'>
@@ -43,7 +45,7 @@
           </ul>
         </div>
       </div>
-    <li  (click)='enableList(4)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/setting.png"><a >Utilities</a></li>
+    <li  (click)='enableList(4)' class="sidebar-list-item"><img class="image-icon" src="assets/Images/setting.png"> <div><a >Utilities</a></div></li>
       <div class="sidebar-list-item-options display-block" *ngIf="sidebarList[4]">
         <div class="utilities-options" >
           <ul class='options-list'>

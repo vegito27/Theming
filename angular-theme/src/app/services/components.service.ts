@@ -7,8 +7,10 @@ import { Subject } from 'rxjs';
 export class ComponentsService {
 
   isSideBarVisible=new Subject<boolean>();
+  isOptionBarVisible=new Subject<boolean>();
 
   constructor() {
     this.isSideBarVisible.next(false)
+    this.isOptionBarVisible.next(false)
    }
 }

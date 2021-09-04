@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { OptionsbarComponent } from '../shared/optionsbar/optionsbar.component';
 import { NavComponent } from './nav/nav.component';
+import { LayoutComponent } from '../shared/layout/layout.component';
 
 
 
@@ -22,7 +23,8 @@ import { NavComponent } from './nav/nav.component';
     DashboardComponent,
     FooterComponent,
     OptionsbarComponent,
-    NavComponent
+    NavComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,

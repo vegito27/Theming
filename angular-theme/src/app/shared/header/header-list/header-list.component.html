@@ -3,16 +3,11 @@
   <div class="header-list-right">
     <div class="col clickable" (click)="toggleSideBar()" style='padding-bottom:0;text-align:end'><img src="../../../../assets/Icons/menu.png" width="20px" height="20px"></div>
     <div class="col">Icon</div>
-    <div class="col">Home</div>
-    <div class="col">Profile</div>
-    <div class="col">Features</div>
-    <div class="col">Options</div>
-    <div class="col">Messagings</div>
   </div>
   <div class="header-list-left">
     <div class="col"><img src="assets/Icons/bell.svg" width='20px' height="20px">&nbsp;</div>
     <div class="col"><i class="fa fa-user-circle" style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;Rishabh Tripathi</div>
-    <div class="col clickable"><img src="../../../../assets/Icons/setting-lines.png" width="20px" height="20px"></div>
+    <div class="col clickable"><img src="../../../../assets/Icons/setting-lines.png" width="20px" height="20px" (click)="changeOptionBar()"></div>
   </div>
 </div>
 
