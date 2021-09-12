@@ -1,0 +1,35 @@
+
+.sidebar
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+// .sidebar-transition{
+//   &-in{
+//     background-color: beige;
+//   }
+
+//   &-out{
+//     background-color: bisque;
+//   }
+// }
+
+
+
+.sidebar-transition{
+  &-in{
+    width: 280px;
+    transition: all 1s ease;
+    background-color: beige;;
+  }
+  &-out{
+    width: 0px;
+    transition: all 1s ease;
+    background-color: bisque;
+  }
+}

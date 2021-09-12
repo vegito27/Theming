@@ -1,0 +1,21 @@
+.option-bar{
+  position: absolute;
+  right: 0;
+  top: 50px;
+  height: calc(100vh - 50px) ;
+  width: 280px;
+  background-color: aquamarine;
+}
+
+.option-bar-transition{
+  &-in{
+    width: 280px;
+    transition: all 1s ease;
+    background-color: aquamarine;;
+  }
+  &-out{
+    width: 0px;
+    transition: all 1s ease;
+    background-color: rgb(65, 231, 176);
+  }
+}

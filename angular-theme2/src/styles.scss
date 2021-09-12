@@ -1,0 +1,12 @@
+@import './styles/header/header.scss';
+@import './styles/optionsBar/option-bar.scss';
+@import './styles/optionsBar/option-bar-layout.scss';
+@import './styles/sidebar/sidebar.scss';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
