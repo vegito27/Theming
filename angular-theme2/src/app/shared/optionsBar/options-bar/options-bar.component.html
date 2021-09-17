@@ -1,4 +1,5 @@
-<div class="option-bar" [ngClass]="!isOptionBarVisible?'option-bar-transition-in':'option-bar-transition-out'">
+<div class="option-bar" [attr.layout]="layout" [ngClass]="isOptionBarVisible?'option-bar-transition-in':'option-bar-transition-out'">
 
-<app-option-bar-layout></app-option-bar-layout>
+<app-option-bar-layout class="options-bar"  ></app-option-bar-layout>
+<div [attr.layout]="layout" class="cross" *ngIf="isOptionBarVisible" (click)="closeOptionsBar()">X</div>
 </div>

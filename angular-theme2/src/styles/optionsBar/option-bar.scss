@@ -10,7 +10,7 @@
 .option-bar-transition{
   &-in{
     width: 280px;
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     background-color: aquamarine;;
   }
   &-out{
@@ -18,4 +18,49 @@
     transition: all 1s ease;
     background-color: rgb(65, 231, 176);
   }
+}
+
+
+// [layout="1"].option-bar{
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   height: calc(100vh - 50px) ;
+//   width: 280px;
+//   background-color: aquamarine;
+// }
+
+[layout="1"].option-bar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100vh - 50px) ;
+  width: 280px;
+  background-color: aquamarine;
+}
+
+[layout="1"].option-bar-transition{
+  &-in{
+    width: 100%;
+    height: 200px;
+    transition: height 1s ease;
+    background-color: aquamarine;;
+  }
+  &-out{
+    width: 100%;
+    height: 0;
+    transition: height 1s ease;
+    background-color: rgb(65, 231, 176);
+  }
+}
+
+[layout="1"].cross{
+  position: absolute;
+  bottom: -25px;
+  border: 1px solid black;
+  border-top: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 20px;
+  left: 1px;
 }

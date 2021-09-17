@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { LayoutService } from 'src/app/services/layout.service';
 import { SidebarsService } from 'src/app/services/sidebars.service';
 
 @Component({
@@ -8,19 +9,21 @@ import { SidebarsService } from 'src/app/services/sidebars.service';
 })
 export class HeaderListComponent implements OnInit {
 
-  constructor(private sidebars:SidebarsService) { }
+  constructor(private sidebars:SidebarsService,private layoutServices:LayoutService) { }
 
   showSideBar:boolean = false
   showOptionsBar:boolean=false
-
+  layout!:Number;
+  @Output() sidebarAnimation=new EventEmitter()
 
   ngOnInit(): void {
+    this.layoutServices.curretLayout.subscribe(value=>{
+      this.layout=value
+    })
     this.sidebars.sideBarVisible.subscribe(data=>{
-      console.log(data)
       this.showSideBar=data
     })
     this.sidebars.optionBarVisible.subscribe(data=>{
-      console.log(data)
       this.showOptionsBar=data
     })
 
@@ -29,7 +32,6 @@ export class HeaderListComponent implements OnInit {
   toggleSideBar()
   {
     this.showSideBar=!this.showSideBar
-    
     this.sidebars.sideBarVisible.next(this.showSideBar)
   }
 
@@ -37,7 +39,5 @@ export class HeaderListComponent implements OnInit {
     this.showOptionsBar=!this.showOptionsBar
     this.sidebars.optionBarVisible.next(this.showOptionsBar)
   }
-
-
 
 }

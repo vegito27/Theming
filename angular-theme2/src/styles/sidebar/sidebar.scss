@@ -9,18 +9,6 @@
   background-color: aquamarine;
 }
 
-// .sidebar-transition{
-//   &-in{
-//     background-color: beige;
-//   }
-
-//   &-out{
-//     background-color: bisque;
-//   }
-// }
-
-
-
 .sidebar-transition{
   &-in{
     width: 280px;
@@ -31,5 +19,60 @@
     width: 0px;
     transition: all 1s ease;
     background-color: bisque;
+    opacity: 0.5;
+
+  }
+}
+
+
+[layout="3"].sidebar
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: rgb(70, 90, 83) !important;
+  opacity: 0.5;
+}
+
+[layout="3"].sidebar-transition{
+  &-in{
+    width: 280px;
+    transition: all 1s ease;
+    background-color: beige;
+  }
+  &-out{
+    width: 0px;
+    transition: all 1s ease;
+    background-color: bisque;
+    opacity: 0.5;
+
+  }
+}
+
+[layout="5"].sidebar
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: rgb(70, 90, 83) !important;
+  opacity: 0.5;
+}
+
+[layout="5"].sidebar-transition{
+  &-in{
+    width: 280px;
+    transition: all 1s ease;
+    background-color: beige;
+  }
+  &-out{
+    width: 50px;
+    transition: all 1s ease;
+    background-color: bisque;
+    opacity: 0.5;
+
   }
 }

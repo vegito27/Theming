@@ -1,8 +1,10 @@
-<div class="options-bar">
-  <div class="layouts">
-    <div class="layout layout-1">1</div>
-    <div class="layout layout-2">2</div>
-    <div class="layout layout-3">3</div>
-    <div class="layout layout-4">4</div>
+<div [attr.layout]="layout"  [ngClass]="isOptionBarVisible?'show':'hide'">
+  <div [attr.layout]="layout" class="layouts">
+    <div [attr.layout]="layout" (click)="selectLayout(1)" class="layout layout-1">Flex</div>
+    <div [attr.layout]="layout"  (click)="selectLayout(2)" class="layout layout-2">Flip</div>
+    <div [attr.layout]="layout" (click)="selectLayout(3)" class="layout layout-3">Over</div>
+    <div [attr.layout]="layout" (click)="selectLayout(4)" class="layout layout-4">Fixed</div>
+    <div [attr.layout]="layout" (click)="selectLayout(4)" class="layout layout-4">Half</div>
+    <div [attr.layout]="layout" (click)="selectLayout(4)" class="layout layout-4">Down</div>
   <div>
 </div>

@@ -1,9 +1,10 @@
-<ul class="header-list">
-  <div class="header-list-left">
-    <li *ngIf="!showSideBar" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/menu.png"></div></li>
-    <li *ngIf="showSideBar"  (click)='toggleSideBar()'><div class="icon-close"><img src="assets/Icons/close.png"></div></li>
+<ul [attr.layout]="layout" class="header-list">
+  <div [attr.layout]="layout" class="header-list-left">
+    <li *ngIf="!showSideBar && (layout!==3 && layout!==4 )" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/menu.png"></div></li>
+    <li *ngIf="showSideBar && (layout==3 && layout!==4)" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/menu.png"></div></li>
+    <li *ngIf="showSideBar && layout!==3"  (click)='toggleSideBar()'><div class="icon-close"><img src="assets/Icons/close.png"></div></li>
   </div>
-  <div class="header-list-right" style="margin-right: 30px;">
+  <div [attr.layout]="layout" class="header-list-right" >
     <li><div class="icon"><img src="assets/Icons/bell.svg"></div></li>
     <li (click)='toggleOptionsBar()'><div class="icon"><img src="../assets/Icons/setting-lines.png"></div></li>
   </div>

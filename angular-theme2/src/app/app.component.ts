@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LayoutService } from './services/layout.service';
+import { SidebarsService } from './services/sidebars.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,31 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-theme2';
+
+  constructor(private layoutServices:LayoutService,private sidebars:SidebarsService) { }
+  layout!:Number
+  optionBar:boolean=false
+  isOptionBarVisible:boolean=false
+
+  ngOnInit(): void {
+    this.layoutServices.curretLayout.subscribe(value=>{
+      this.layout=value
+    })
+
+    this.sidebars.optionBarVisible.subscribe(data=>{
+      this.optionBar=data
+    })
+
+    this.sidebars.optionBarVisible.subscribe(data=>{
+      this.isOptionBarVisible=data
+    })
+
+  }
+
+  hide(){
+
+    this.isOptionBarVisible=!this.isOptionBarVisible
+
+
+  }
 }

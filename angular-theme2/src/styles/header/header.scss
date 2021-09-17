@@ -1,23 +1,85 @@
+//initial layout
 .header{
+  position: absolute;
   width: calc(100% - 280px);
   height: 50px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  margin-left: 280px;
-  top: 50px;
-  transition: all 1s ease;
+  left: 280px;
+  transition: left 1s ease;
 }
 
 .header-full{
     width: 100%;
-    margin-left: 0;
+    left: 0;
     height: 50px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    top: 50px;
-    transition: all 1s ease;
+    transition: left 1s ease;
 }
 
 
+.header-list{
+  display: inline-block;
+  padding-top: 15px;
+  div{
+    display: inline-block;
+  }
+  &-right{
+    position: fixed;
+    right: 30px;
+    li{
 
+      padding:0 20px ;
+      display: inline-block;
+    }
+  }
+
+  &-left{
+    li{
+      padding:0 20px;
+    }
+  }
+}
+
+//layout-1
+[layout="1"].header{
+  position: absolute;
+  width: calc(100% - 280px);
+  height: 50px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  left: 280px;
+  transition: left 1s ease;
+}
+
+[layout="1"].header-full{
+    width: 100%;
+    left: 0;
+    height: 50px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: left 1s ease;
+}
+
+[layout="1"].header-list{
+  display: inline-block;
+  padding-top: 15px;
+  div{
+    display: inline-block;
+  }
+  &-right{
+    position: fixed;
+    right: 30px;
+    li{
+
+      padding:0 20px ;
+      display: inline-block;
+    }
+  }
+
+  &-left{
+    li{
+      padding:0 20px;
+    }
+  }
+}
 
 ul{
   li{
@@ -29,24 +91,43 @@ ul{
   }
 }
 
-.header-list{
-  display: flex;
-  justify-content: space-between;
+//layout-2
+[layout="3"].header{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  left: 0px !important;
+  transition: left 1s ease;
+}
+
+[layout="3"].header-full{
+    width: 100%;
+    left: 0;
+    height: 50px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: left 1s ease;
+}
+
+[layout="2"].header-list{
+  display: inline-block;
+  padding-top: 15px;
+  div{
+    display: inline-block;
+  }
   &-right{
-    display: flex;
+    position: fixed;
+    right: 30px;
     li{
+
       padding:0 20px ;
+      display: inline-block;
     }
   }
 
   &-left{
-    display: flex;
-    align-items: center;
     li{
       padding:0 20px;
     }
   }
 }
-
-
-

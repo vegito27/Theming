@@ -1,4 +1,3 @@
-<div class="sidebar" [ngClass]="isSideBarVisible?'sidebar-transition-in':'sidebar-transition-out'">
-
-
+<div class="sidebar" [attr.layout]="layout" [ngClass]="isSideBarVisible?'sidebar-transition-in':'sidebar-transition-out'">
+<div class='cross' *ngIf='layout==3  && isSideBarVisible' (click)="toggleSideBar()">X</div>
 </div>

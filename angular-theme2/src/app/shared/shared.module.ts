@@ -7,6 +7,7 @@ import { HeaderListComponent } from './header/header-list/header-list.component'
 import { OptionBarThemesComponent } from './optionsBar/option-bar-themes/option-bar-themes.component';
 import { OptionBarThemeModeComponent } from './optionsBar/option-bar-theme-mode/option-bar-theme-mode.component';
 import { OptionBarLayoutComponent } from './optionsBar/option-bar-layout/option-bar-layout.component';
+import { SidebarListComponent } from './sidebar/sidebar-list/sidebar-list.component';
 
 
 
@@ -19,6 +20,7 @@ import { OptionBarLayoutComponent } from './optionsBar/option-bar-layout/option-
     OptionBarThemesComponent,
     OptionBarThemeModeComponent,
     OptionBarLayoutComponent,
+    SidebarListComponent,
   ],
   imports: [
     CommonModule

@@ -1,0 +1,23 @@
+.show{
+  // visibility: hidden;
+  // opacity: 0;
+  // transform: scaleY(-280px);
+  // transition:transform visibility 0s, opacity 0.5s ease;
+  height:280px ;
+  transition:height 1s ease;
+}
+
+.hide{
+  // visibility: visible;
+  // opacity: 1;
+  height:0px ;
+  // transition:height 1s ease;
+  display: none;
+  transition:all 1s ease;
+  // transform: scaleY(-280px);
+  // transition:transform visibility 0s, opacity 0.5s ease;
+  // transition: visibility 10s, opacity 15s ease;;
+  // background-color: red;
+}
+
+
