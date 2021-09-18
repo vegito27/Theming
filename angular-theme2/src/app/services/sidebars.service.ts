@@ -14,24 +14,4 @@ export class SidebarsService {
     this.optionBarVisible.next(true)
   }
 
-  updateSideBar(){
-
-
-
-
-
-  }
-
-  updateOptionsBar(){
-
-
-
-  }
-
-
-
-
-
-
-
 }

@@ -2,7 +2,7 @@
 .header{
   position: absolute;
   width: calc(100% - 280px);
-  height: 50px;
+  height: 70px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   left: 280px;
   transition: left 1s ease;
@@ -11,7 +11,7 @@
 .header-full{
     width: 100%;
     left: 0;
-    height: 50px;
+    height: 70px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     transition: left 1s ease;
 }
@@ -19,7 +19,7 @@
 
 .header-list{
   display: inline-block;
-  padding-top: 15px;
+  padding-top: 25px;
   div{
     display: inline-block;
   }
@@ -44,7 +44,7 @@
 [layout="1"].header{
   position: absolute;
   width: calc(100% - 280px);
-  height: 50px;
+  height: 70px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   left: 280px;
   transition: left 1s ease;
@@ -53,7 +53,7 @@
 [layout="1"].header-full{
     width: 100%;
     left: 0;
-    height: 50px;
+    height: 70px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     transition: left 1s ease;
 }
@@ -95,7 +95,7 @@ ul{
 [layout="3"].header{
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 70px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   left: 0px !important;
   transition: left 1s ease;
@@ -104,12 +104,12 @@ ul{
 [layout="3"].header-full{
     width: 100%;
     left: 0;
-    height: 50px;
+    height: 70px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     transition: left 1s ease;
 }
 
-[layout="2"].header-list{
+[layout="3"].header-list{
   display: inline-block;
   padding-top: 15px;
   div{
@@ -120,6 +120,45 @@ ul{
     right: 30px;
     li{
 
+      padding:0 20px ;
+      display: inline-block;
+    }
+  }
+
+  &-left{
+    li{
+      padding:0 20px;
+    }
+  }
+}
+
+[layout="6"].header{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  left: 0px !important;
+  transition: left 1s ease;
+}
+
+[layout="6"].header-full{
+    width: 100%;
+    left: 0;
+    height: 70px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: left 1s ease;
+}
+
+[layout="6"].header-list{
+  display: inline-block;
+  padding-top: 15px;
+  div{
+    display: inline-block;
+  }
+  &-right{
+    position: fixed;
+    right: 30px;
+    li{
       padding:0 20px ;
       display: inline-block;
     }

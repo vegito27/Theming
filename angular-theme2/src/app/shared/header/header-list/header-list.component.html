@@ -1,8 +1,8 @@
 <ul [attr.layout]="layout" class="header-list">
   <div [attr.layout]="layout" class="header-list-left">
-    <li *ngIf="!showSideBar && (layout!==3 && layout!==4 )" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/menu.png"></div></li>
-    <li *ngIf="showSideBar && (layout==3 && layout!==4)" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/menu.png"></div></li>
-    <li *ngIf="showSideBar && layout!==3"  (click)='toggleSideBar()'><div class="icon-close"><img src="assets/Icons/close.png"></div></li>
+    <li *ngIf="!showSideBar && (layout!==3 && layout!==5 )" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/close.png"></div></li>
+    <li *ngIf="showSideBar && (layout==3 && layout!==5)" (click)='toggleSideBar()'><div class="icon-menu"><img src="assets/Icons/close.png"></div></li>
+    <li *ngIf="showSideBar && layout!==3"  (click)='toggleSideBar()'><div class="icon-close"><img src="assets/Icons/menu.png"></div></li>
   </div>
   <div [attr.layout]="layout" class="header-list-right" >
     <li><div class="icon"><img src="assets/Icons/bell.svg"></div></li>

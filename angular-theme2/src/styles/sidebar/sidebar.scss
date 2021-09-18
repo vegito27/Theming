@@ -67,9 +67,38 @@
     width: 280px;
     transition: all 1s ease;
     background-color: beige;
+    z-index: 90;
   }
   &-out{
-    width: 50px;
+    width: 80px;
+    transition: all 1s ease;
+    background-color: bisque;
+    opacity: 0.5;
+    z-index: 90;
+
+  }
+}
+
+
+[layout="6"].sidebar
+{
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 280px;
+  height: 100vh;
+  background-color: rgb(70, 90, 83) !important;
+  opacity: 0.5;
+}
+
+[layout="6"].sidebar-transition{
+  &-in{
+    width: 280px;
+    transition: all 1s ease;
+    background-color: beige;
+  }
+  &-out{
+    width: 0px;
     transition: all 1s ease;
     background-color: bisque;
     opacity: 0.5;
