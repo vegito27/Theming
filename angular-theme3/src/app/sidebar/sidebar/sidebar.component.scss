@@ -1,0 +1,16 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  &-open{
+    transform: translateX(300px);
+    transition: transform 1s ease;
+  }
+  &-close{
+    transform: translateX(0px);
+    transition: transform 1s ease;
+  }
+}
+

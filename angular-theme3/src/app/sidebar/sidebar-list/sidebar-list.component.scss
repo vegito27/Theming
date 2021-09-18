@@ -1,0 +1,27 @@
+.sidebar-list-item{
+  list-style: none;
+  padding: 20px 15px;
+  &:hover{
+    background-color: aqua;
+  }
+}
+
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+  &-open{
+    // width: 300px;
+    transform: translateX(-300px);
+    transition: transform 1s ease;
+  }
+  &-close{
+    // width: 0px;
+    transform: translateX(0px);
+    transition: transform 1s ease;
+    // transition: width  1s ease;
+  }
+}
+
