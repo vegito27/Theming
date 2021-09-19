@@ -1,4 +1,8 @@
-<div class="sidebar" [attr.layout]="layout" [ngClass]="isSideBarVisible?'sidebar-transition-in':'sidebar-transition-out'">
-  
-<div class='cross' *ngIf='(layout==3 || layout==5) && isSideBarVisible' (click)="toggleSideBar()">X</div>
+<div class="sidebar" [attr.layout]="layout" [class.less-index]="!isSideBarVisible" [ngClass]="isSideBarVisible?'sidebar-transition-in':'sidebar-transition-out'">
+
+<!-- <div class='cross' *ngIf='(layout==3 || layout==5) && isSideBarVisible' (click)="toggleSideBar()">X</div> -->
+
+<div class="icon-close"   *ngIf='isSideBarVisible && layout!==4 && layout!==5 && layout!==6'  (click)="toggleSideBar()" ><img  src="assets/Icons/close.png"></div>
+<div class="icon-open"   *ngIf='layout===5 '  (click)="toggleSideBar()" ><div style='position:relative;padding:20px'><img style='position:absolute;top: 10px;right: 9px;'  src="assets/Icons/{{isSideBarVisible ?'close.png':'menu.png'}}"></div></div>
+
 </div>

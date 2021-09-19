@@ -26,5 +26,7 @@ export class OptionBarLayoutComponent implements OnInit {
 
   selectLayout(val: number){
     this.layoutServices.curretLayout.next(val)
+    this.sidebars.optionBarVisible.next(false)
+    val!==4?this.sidebars.sideBarVisible.next(true):this.sidebars.sideBarVisible.next(false)
   }
 }

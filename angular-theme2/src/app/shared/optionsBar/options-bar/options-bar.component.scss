@@ -1,1 +1,43 @@
 
+.cross{
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  border: 2px solid gray;
+  padding: 4px 3px;
+  opacity: 0.4;
+  img{
+    width: 15px;
+    height:15px
+  }
+}
+
+
+[layout="1"].cross{
+  position: absolute;
+  bottom: -32px;
+  border: 2px solid gray;
+  opacity: 0.6;
+  border-top: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  right: 10px;
+  padding-left: 6px;
+}
+
+
+
+[layout="7"].cross{
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  border: 2px solid gray;
+  padding: 4px 3px;
+  img{
+    width: 15px;
+    height:15px;
+    right: -20px;
+  }
+}
+

@@ -21,6 +21,7 @@ export class HeaderListComponent implements OnInit {
       this.layout=value
     })
     this.sidebars.sideBarVisible.subscribe(data=>{
+      console.log(data)
       this.showSideBar=data
     })
     this.sidebars.optionBarVisible.subscribe(data=>{

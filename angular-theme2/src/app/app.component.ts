@@ -16,6 +16,11 @@ export class AppComponent {
   isOptionBarVisible:boolean=false
 
   ngOnInit(): void {
+
+    // this.sidebars.optionBarVisible.next(false)
+    // this.sidebars.sideBarVisible.next(false)
+    this.layoutServices.curretLayout.next(1)
+
     this.layoutServices.curretLayout.subscribe(value=>{
       this.layout=value
     })
@@ -31,9 +36,6 @@ export class AppComponent {
   }
 
   hide(){
-
     this.isOptionBarVisible=!this.isOptionBarVisible
-
-
   }
 }

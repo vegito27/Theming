@@ -21,14 +21,6 @@
 }
 
 
-// [layout="1"].option-bar{
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   height: calc(100vh - 50px) ;
-//   width: 280px;
-//   background-color: aquamarine;
-// }
 
 [layout="1"].option-bar{
   position: absolute;
@@ -58,16 +50,34 @@
   }
 }
 
-[layout="1"].cross{
+
+
+
+
+[layout="3"].option-bar{
   position: absolute;
-  bottom: -25px;
-  border: 1px solid black;
-  border-top: none;
-  cursor: pointer;
-  font-size: 20px;
-  width: 20px;
-  left: 1px;
+  right: 0;
+  top: 0px;
+  height:100vh;
+  width: 280px;
+  background-color: aquamarine;
+  opacity: 0.5;
 }
+
+[layout="3"].option-bar-transition{
+  &-in{
+    transform: translateX(0);
+    transition: transform 1s ease;
+    background-color: aquamarine;;
+  }
+  &-out{
+    transform: translateX(280px);
+    transition:transform 1s ease;
+    background-color: rgb(65, 231, 176);
+  }
+}
+
+
 
 [layout="5"].option-bar{
   position: absolute;
@@ -95,20 +105,20 @@
 [layout="7"].option-bar{
   position: absolute;
   left:0;
-  top: 70px;
-  height: calc(100vh - 70px) ;
+  top: 0px;
+  height:100vh;
   width: 280px;
   background-color: aquamarine;
 }
 
 [layout="7"].option-bar-transition{
   &-in{
-    transform: translateX(280px);
+    transform: translateX(80px);
     transition: all 0.7s ease;
     background-color: aquamarine;;
   }
   &-out{
-    transform: translateX(-100px);
+    transform: translateX(-360px);
     transition: all 1s ease;
     background-color: rgb(65, 231, 176);
   }
