@@ -1,0 +1,102 @@
+body[data-theme="dark-theme"]{
+    --primaryClr: #0abb92;
+    --primaryClr60: #0b5e49;
+    --primaryClr10: #0e231e;
+    --secondaryClr: #98a4ff;
+    --secondaryClr150: #1e2232;
+    --secondaryClr130: #323c89;
+    --secondaryClr60: #181a2a;
+    --secondaryClr30: #181a2a;
+    --Yellow: #e7a61a;
+    --Yellow10: #2e2105;
+    --Yellow05: #222c35;
+    --Red: #d55438;
+    --Red10: #2a0f09;
+    --Red05: rgba(213,84,56,0.05);
+    --border: #2a2a2a;
+    --iconLight: #7c7e8c;
+    --iconMedium: #404042;
+    --iconStrong: #2a2a2a;
+    --boxShadow: rgba(0,0,0,0.6);
+    --text130: #ebebf5;
+    --text: #dcdcdd;
+    --subText: #b0b2ba;
+    --subText50: #7c7e8c;
+    --subText70: #2a2a2a;
+    --primaryBg: #121212;
+    --secondaryBg: #2a2a2a;
+    --tertiaryBg: #2a2a2a;
+    --quaternaryBg: #1d1d1d;
+    --preloaderBg: #2a2a2a;
+    --rippleNormal: hsla(0,0%,100%,0.1);
+    --constantYellow150: #d2ab66;
+    --constantText: #44475b;
+    --constantText120: #191c27;
+    --constantSubText10: #636464;
+    --constantWhite: #ebebf5;
+    --constantTransparent: transparent;
+    --constantHalfTransparent: rgba(0,0,0,0.5);
+    --constantSecondaryClr180: #2a2a2a;
+    --constantSecondaryClr10: #2a2a2a;
+    --cardBackground: #1d1d1d;
+}
+
+
+
+body[data-theme="light-theme"]{
+    --primaryClr: #00d09c;
+    --primaryClr60: #66e3c4;
+    --primaryClr10: #e5faf5;
+    --secondaryClr: #5367ff;
+    --secondaryClr150: #1e2232;
+    --secondaryClr130: #98a4ff;
+    --secondaryClr60: #98a4ff;
+    --secondaryClr30: #eef0ff;
+    --Yellow: #ffb61b;
+    --Yellow10: #fff5e0;
+    --Yellow05: rgba(255,182,27,0.05);
+    --Red: #eb5b3c;
+    --Red10: #fae9e5;
+    --Red05: rgba(235,91,60,0.05);
+    --border: #ecedef;
+    --iconLight: #b0b2ba;
+    --iconMedium: #dddee1;
+    --iconStrong: #ecedef;
+    --boxShadow: rgba(0,0,0,0.1);
+    --text130: #44475b;
+    --text: #44475b;
+    --subText: #7c7e8c;
+    --subText50: #b0b2ba;
+    --subText70: #ecedef;
+    --primaryBg: #fff;
+    --secondaryBg: #fff;
+    --tertiaryBg: #ecedef;
+    --quaternaryBg: #f6f6f7;
+    --preloaderBg: #f6f6f7;
+    --rippleNormal: rgba(0,0,0,0.1);
+    --constantYellow150: #d2ab66;
+    --constantText: #44475b;
+    --constantText120: #191c27;
+    --constantSubText10: #636464;
+    --constantWhite: #fff;
+    --constantTransparent: transparent;
+    --constantHalfTransparent: rgba(0,0,0,0.5);
+    --constantSecondaryClr180: #2a2a2a;
+    --constantSecondaryClr10: #f6f6f7;
+    --cardBackground: #fff;
+}
+
+
+body[data-theme="light-theme"] span{
+  background-color:var(--primaryClr);
+  color:var(--Red05);
+  padding: 15px 30px;
+  border: none;
+}
+
+
+span{
+  font-size: 100px;
+}
+
+

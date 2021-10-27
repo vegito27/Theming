@@ -1,0 +1,27 @@
+<form [formGroup]="form" class="mb-5 mt-4" >
+  <div class="col-md-12">
+    <div class="col-md-5 offset-1 mb-3">
+      <label class="mb-1">Building Name: </label>
+      <input validationMsg type="text" class="form-control " formControlName="buildingName" maxlength="20" />
+    </div>
+
+    <div class="row">
+      <div class="col-5 offset-1 mb-2">
+        <label class="mb-2">Customer<span class="text-danger">*</span> </label>
+          <mat-select disableOptionCentering formControlName="customerName" placeholder="--Select Customer--"  class='form-control'>
+            <mat-option [value]="customer" *ngFor="let customer of data">{{ customer }}</mat-option>
+          </mat-select>
+      </div>
+
+      <div class="col-5">
+        <label class="mb-2">Building Phone<span class="text-danger">*</span> </label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text font-weight-bold" id="basic-addon1">+1</span>
+          </div>
+          <input appPhoneMask type="text" class="form-control"  formControlName="phone" />
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

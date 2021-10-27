@@ -1,0 +1,169 @@
+// @import url('../styles/palettes.scss');
+
+// @use '~@angular/material' as mat;
+// @include mat.core();
+
+// // light
+// $my-light-primary: mat.define-palette(mat.$admin-primary-palette, 500);
+// $my-light-accent: mat.define-palette(mat.$admin-secondary-palette, A100, A200, A400);
+// $admin-light-theme: mat-light-theme((
+//  color: (
+//    primary: $my-light-primary,
+//    accent: $my-light-accent
+//  ))
+// );
+//  .light-mode{
+//   @include angular-material-theme($admin-light-theme);
+//   @include mat.button-theme($admin-theme);
+//   background-color: whitesmoke
+//  }
+
+// // Dark Mode
+// $my-dark-primary:mat.define-palette(mat.$admin-body-palettee,900);
+// $my-dark-accent:mat.define-palette(mat.$admin-body-palettee,A700);
+// $admin-dark-theme:mat-dark-theme((
+//   color:(
+//     primary:$my-dark-primary,
+//     accent:$my-dark-accent
+//   ))
+// );
+// .dark-mode{
+//   @include angular-material-theme($admin-dark-theme);
+//   background-color:#333;
+//   color:whitesmoke
+// }
+
+// @include mat.all-component-themes($admin-light-theme);
+
+
+$admin-primary-palette:(
+  50:hsl(187, 72%, 93%),
+  100:#B2EBF2,
+  200:#80DEEA,
+  300:#4DD0E1,
+  400:#26C6DA,
+  500:#00BCD4,
+  600:#00ACC1,
+  700:#0097A7,
+  800:#00838F,
+  900:#006064,
+  contrast:(
+    A100:#84FFFF,
+    A200:#18FFFF,
+    A400:#00E5FF,
+    A700:#00B8D4
+  )
+);
+
+$admin-body-palette:(
+  50:#FAFAFA,
+  100:#F5F5F5,
+  200:#EEEEEE,
+  300:#E0E0E0,
+  400:#BDBDBD,
+  500:#9E9E9E,
+  600:#757575,
+  700:#616161,
+  800:#424242,
+  900:#212121,
+  contrast:(
+    A700:#000000,
+    A400:#FFFFFF
+  )
+);
+
+$admin-secondary-palette:(
+  50:#FCE4EC,
+  100:#F8BBD0,
+  200:#F48FB1,
+  300:#F06292,
+  400:#EC407A,
+  500:#E91E63,
+  600:#D81B60,
+  700:#C2185B,
+  800:#AD1457,
+  900:#880E4F,
+  contrast:(
+    A100:#FF80AB,
+    A200:#FF4081,
+    A400:#F50057,
+    A700:#C51162
+  )
+);
+
+
+$admin-greenish-palette:(
+  100:#C8E6C9,
+  200:#A5D6A7,
+  300:#81C784,
+  400:#66BB6A,
+  500:#4CAF50,
+  600:#43A047,
+  700:#388E3C,
+  800:#2E7D32,
+  900:#1B5E20,
+  contrast:(
+    A100:#B9F6CA,
+    A200:#69F0AE,
+    A400:#00E676,
+    A700:#00C853
+  )
+);
+
+$my-palette: mat.define-palette(mat.$indigo-palette);
+
+// Light Mode
+$my-light-primary: mat.define-palette($admin-primary-palette, 500);
+$my-light-accent: mat.define-palette($admin-secondary-palette, A100, A200, A400);
+$admin-light-theme: mat.define-light-theme((
+ color: (
+   primary: $my-light-primary,
+   accent: $my-light-accent
+ ))
+);
+ .light-mode{
+  @include mat.core-theme($admin-light-theme);
+  // @include mat.button-theme($admin-light-theme);
+  // @include mat.all-component-themes($admin-light-theme);
+  color: mat.get-color-from-palette($my-light-accent);
+  background: mat.get-color-from-palette($my-palette, '500');
+  background-color: mat.get-color-from-palette($my-light-accent);
+
+  .my-button{
+    border:none;
+    background-color: aqua;
+    color: white;
+    padding: 15px 60px;
+    margin: 50px;
+    cursor: pointer;
+  }
+ }
+
+
+// Dark Mode
+$my-dark-primary:mat.define-palette($admin-body-palette,900);
+$my-dark-accent:mat.define-palette($admin-body-palette,A400,A700);
+$admin-dark-theme:mat.define-dark-theme((
+  color:(
+    primary:$my-dark-primary,
+    accent:$my-dark-accent
+  ))
+);
+.dark-mode{
+  @include mat.all-component-themes($admin-dark-theme);
+  background-color:#333;
+  color: whitesmoke;
+
+  .my-button{
+    border:none;
+    background-color: aqua;
+    color: white;
+    padding: 15px 60px;
+    margin: 50px;
+    cursor: pointer;
+  }
+
+}
+
+@include mat.all-component-themes($admin-light-theme);
+

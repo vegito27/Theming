@@ -1,0 +1,22 @@
+<form [formGroup]="form" class="mb-5 mt-4">
+  <div class="col-md-12">
+    <div class="row">
+  <div class="col-md-5 offset-1">
+    <label class="mb-2">Manager</label>
+    <mat-select disableOptionCentering  formControlName="manager" placeholder="--Select Manager--"  class='form-control' multiple>
+      <mat-option [value]="customer" *ngFor="let customer of managers">{{ customer }}</mat-option>
+    </mat-select>
+  </div>
+
+  <div class="col-md-5">
+    <label class="mb-2">SuperVisor</label>
+    <mat-select disableOptionCentering formControlName="superVisor"  placeholder="--Select SuperVisor--"  class='form-control' multiple>
+      <mat-option [value]="customer" *ngFor="let customer of customers">{{ customer }}</mat-option>
+    </mat-select>
+  </div>
+  </div>
+  </div>
+
+
+
+</form>

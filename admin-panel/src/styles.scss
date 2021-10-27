@@ -1,0 +1,324 @@
+
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// @use '~@angular/material' as mat;
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+// @include mat.core();
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $admin-panel-primary: mat.define-palette(mat.$indigo-palette);
+// $admin-panel-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// // The warn palette is optional (defaults to red).
+// $admin-panel-warn: mat.define-palette(mat.$red-palette);
+
+// // Create the theme object. A theme consists of configurations for individual
+// // theming systems such as "color" or "typography".
+// $admin-panel-theme: mat.define-light-theme((
+//   color: (
+//     primary: $admin-panel-primary,
+//     accent: $admin-panel-accent,
+//     warn: $admin-panel-warn,
+//   )
+// ));
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include mat.all-component-themes($admin-panel-theme);
+
+// /* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+
+
+// /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// @import '~@angular/material/theming';
+// @include mat-core();
+
+// $mat-primary-scheme:(
+//   100:orange,
+//   500:dodgerBlue,
+//   700:blue,  
+//   contrast:(
+//     100:rgba(0,0,0,0.87),
+//     500:#ffffff,
+//     700:#fff
+//   )
+// );
+
+// $mat-accent-scheme:(
+//   100:red,
+//   500:pink,
+//   700:blue,
+//   contrast:(
+//     100:rgba(0,0,0,0.87),
+//     500:rgba(0,0,0,0.87),
+//     700:#fff
+//   )
+// );
+
+
+// $mat-primary-palette:mat-palette($mat-primary-scheme);
+// $mat-accent-palette:mat-palette($mat-accent-scheme);
+
+// $app-light-theme:mat-light-theme($mat-primary-palette,$mat-accent-palette);
+
+// .light-mode{
+//   @include angular-material-theme($app-light-theme);
+//   background-color: red
+// }
+
+// $app-dark-theme:mat-dark-theme($mat-primary-palette,$mat-accent-palette);
+
+// .dark-mode{
+//   @include angular-material-theme($app-dark-theme);
+//      background-color:#333;
+//      color:whitesmoke
+// }
+
+// ----------------------------------------//
+
+// @use '~@angular/material' as mat;
+// @import url('./styles/palettes.scss');
+// @include mat.core();
+
+// $admin-primary-palette:(
+//   50:hsl(187, 72%, 93%),
+//   100:#B2EBF2,
+//   200:#80DEEA,
+//   300:#4DD0E1,
+//   400:#26C6DA,
+//   500:#00BCD4,
+//   600:#00ACC1,
+//   700:#0097A7,
+//   800:#00838F,
+//   900:#006064,
+//   contrast:(
+//     A100:#84FFFF,
+//     A200:#18FFFF,
+//     A400:#00E5FF,
+//     A700:#00B8D4
+//   )
+// );
+
+// $admin-body-palette:(
+//   50:#FAFAFA,
+//   100:#F5F5F5,
+//   200:#EEEEEE,
+//   300:#E0E0E0,
+//   400:#BDBDBD,
+//   500:#9E9E9E,
+//   600:#757575,
+//   700:#616161,
+//   800:#424242,
+//   900:#212121,
+//   contrast:(
+//     A700:#000000,
+//     A400:#FFFFFF
+//   )
+// );
+
+// $admin-secondary-palette:(
+//   50:#FCE4EC,
+//   100:#F8BBD0,
+//   200:#F48FB1,
+//   300:#F06292,
+//   400:#EC407A,
+//   500:#E91E63,
+//   600:#D81B60,
+//   700:#C2185B,
+//   800:#AD1457,
+//   900:#880E4F,
+//   contrast:(
+//     A100:#FF80AB,
+//     A200:#FF4081,
+//     A400:#F50057,
+//     A700:#C51162
+//   )
+// );
+
+
+// $admin-greenish-palette:(
+//   100:#C8E6C9,
+//   200:#A5D6A7,
+//   300:#81C784,
+//   400:#66BB6A,
+//   500:#4CAF50,
+//   600:#43A047,
+//   700:#388E3C,
+//   800:#2E7D32,
+//   900:#1B5E20,
+//   contrast:(
+//     A100:#B9F6CA,
+//     A200:#69F0AE,
+//     A400:#00E676,
+//     A700:#00C853
+//   )
+// );
+
+// $my-palette: mat.define-palette(mat.$indigo-palette);
+
+// // Light Mode
+// $my-light-primary: mat.define-palette($admin-primary-palette, 500);
+// $my-light-accent: mat.define-palette($admin-greenish-palette, A100, A200, A700);
+// $admin-light-theme: mat.define-light-theme((
+//  color: (
+//    primary: $my-light-primary,
+//    accent: $my-light-accent
+//  ))
+// );
+//  .light-mode{
+//   // @include mat.core-theme($admin-light-theme);
+//   @include mat.button-theme($admin-light-theme);
+//   // @include mat.all-component-themes($admin-light-theme);
+
+//   // background: mat.get-color-from-palette($my-palette, '500');
+//   background-color: mat.get-color-from-palette($my-light-accent);
+
+//   .my-button{
+//     border:none;
+//     background-color: mat.get-color-from-palette($my-light-primary);
+//     color: mat.get-color-from-palette($my-light-accent,A700);
+//     padding: 15px 60px;
+//     margin: 50px;
+//     cursor: pointer;
+//   }
+//  }
+
+
+// // Dark Mode
+// $my-dark-primary:mat.define-palette($admin-greenish-palette,900);
+// $my-dark-accent:mat.define-palette($admin-body-palette,A400);
+// $admin-dark-theme:mat.define-dark-theme((
+//   color:(
+//     primary:$my-dark-primary,
+//     accent:$my-dark-accent
+//   ))
+// );
+// .dark-mode{
+//   @include mat.all-component-themes($admin-dark-theme);
+//   background-color:#333;
+//   color: whitesmoke;
+
+//   .my-button{
+//     border:none;
+//     background-color: mat.get-color-from-palette($my-dark-primary);
+//     color: white;
+//     padding: 15px 60px;
+//     margin: 50px;
+//     cursor: pointer;
+//   }
+// }
+
+// @include mat.all-component-themes($admin-light-theme);
+
+
+// body[data-theme="dark-theme"]{
+//   --primaryClr: #0abb92;
+//   --primaryClr60: #0b5e49;
+//   --primaryClr10: #0e231e;
+//   --secondaryClr: #98a4ff;
+//   --secondaryClr150: #1e2232;
+//   --secondaryClr130: #323c89;
+//   --secondaryClr60: #181a2a;
+//   --secondaryClr30: #181a2a;
+//   --Yellow: #e7a61a;
+//   --Yellow10: #2e2105;
+//   --Yellow05: #222c35;
+//   --Red: #d55438;
+//   --Red10: #2a0f09;
+//   --Red05: rgba(213,84,56,0.05);
+//   --border: #2a2a2a;
+//   --iconLight: #7c7e8c;
+//   --iconMedium: #404042;
+//   --iconStrong: #2a2a2a;
+//   --boxShadow: rgba(0,0,0,0.6);
+//   --text130: #ebebf5;
+//   --text: #dcdcdd;
+//   --subText: #b0b2ba;
+//   --subText50: #7c7e8c;
+//   --subText70: #2a2a2a;
+//   --primaryBg: #121212;
+//   --secondaryBg: #2a2a2a;
+//   --tertiaryBg: #2a2a2a;
+//   --quaternaryBg: #1d1d1d;
+//   --preloaderBg: #2a2a2a;
+//   --rippleNormal: hsla(0,0%,100%,0.1);
+//   --constantYellow150: #d2ab66;
+//   --constantText: #44475b;
+//   --constantText120: #191c27;
+//   --constantSubText10: #636464;
+//   --constantWhite: #ebebf5;
+//   --constantTransparent: transparent;
+//   --constantHalfTransparent: rgba(0,0,0,0.5);
+//   --constantSecondaryClr180: #2a2a2a;
+//   --constantSecondaryClr10: #2a2a2a;
+//   --cardBackground: #1d1d1d;
+// }
+
+
+// body[data-theme="light-theme"]{
+//   --primaryClr: #00d09c;
+//   --primaryClr60: #66e3c4;
+//   --primaryClr10: #e5faf5;
+//   --secondaryClr: #5367ff;
+//   --secondaryClr150: #1e2232;
+//   --secondaryClr130: #98a4ff;
+//   --secondaryClr60: #98a4ff;
+//   --secondaryClr30: #eef0ff;
+//   --Yellow: #ffb61b;
+//   --Yellow10: #fff5e0;
+//   --Yellow05: rgba(255,182,27,0.05);
+//   --Red: #eb5b3c;
+//   --Red10: #fae9e5;
+//   --Red05: rgba(235,91,60,0.05);
+//   --border: #ecedef;
+//   --iconLight: #b0b2ba;
+//   --iconMedium: #dddee1;
+//   --iconStrong: #ecedef;
+//   --boxShadow: rgba(0,0,0,0.1);
+//   --text130: #44475b;
+//   --text: #44475b;
+//   --subText: #7c7e8c;
+//   --subText50: #b0b2ba;
+//   --subText70: #ecedef;
+//   --primaryBg: #fff;
+//   --secondaryBg: #fff;
+//   --tertiaryBg: #ecedef;
+//   --quaternaryBg: #f6f6f7;
+//   --preloaderBg: #f6f6f7;
+//   --rippleNormal: rgba(0,0,0,0.1);
+//   --constantYellow150: #d2ab66;
+//   --constantText: #44475b;
+//   --constantText120: #191c27;
+//   --constantSubText10: #636464;
+//   --constantWhite: #fff;
+//   --constantTransparent: transparent;
+//   --constantHalfTransparent: rgba(0,0,0,0.5);
+//   --constantSecondaryClr180: #2a2a2a;
+//   --constantSecondaryClr10: #f6f6f7;
+//   --cardBackground: #fff;
+// }
+
+// body[data-theme="light-theme"] button{
+//   // background-color: var(--primaryClr);
+//   border: none;
+//   padding: 10px 40px;
+// }
+
+$body-bg: #000;
+$body-color: white;
+$primary:red;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

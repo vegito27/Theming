@@ -1,0 +1,22 @@
+@import 'config';
+
+.home{
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background-image: url('../assets/images/thub.png');
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  &__name{
+    font-size: 5rem;
+    padding-bottom:1rem;
+    margin-top:1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last{
+      color: $secondary-color;
+    }
+  }
+}

@@ -11,6 +11,8 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { OptionsbarComponent } from '../shared/optionsbar/optionsbar.component';
 import { NavComponent } from './nav/nav.component';
 import { LayoutComponent } from '../shared/layout/layout.component';
+import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,12 +26,16 @@ import { LayoutComponent } from '../shared/layout/layout.component';
     FooterComponent,
     OptionsbarComponent,
     NavComponent,
-    LayoutComponent
+    LayoutComponent,
+    HomeComponent,
+    DynamicFormsComponent,
+
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    SharedModule
+    SharedModule,
+   
   ]
 })
 export class LayoutModule { }

@@ -1,0 +1,13 @@
+<div class="building-form">
+  <h1 class="mt-4" style="width:100%;text-align:center">Form</h1>
+  <app-customer [formData]="buildingForm" (updatedForm)="showForm($event)" ></app-customer>
+  <hr>
+  <app-lead (setData)="setData($event)" [formData]="buildingForm"></app-lead>
+  <hr>
+  <app-supervisor [data]="allData" (updateForm)="showForm($event)" ></app-supervisor>
+
+  <div class="mb-4" style="width:100%;text-align:center">
+    <button class="btn btn-primary" (click)="submitForm()">{{buttonValue}}</button>
+    <!-- <button *ngIf="buildingId" class="btn btn-primary">Edit</button> -->
+  </div>
+</div>

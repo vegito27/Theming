@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.mat-select-panel:not([class*=mat-select-search-panel]){
+  margin-top: 34px ;
+}
+
+.cdk-overlay-pane-select-search.cdk-overlay-pane-select-search-with-offset {
+ margin-top: 40px !important;
+}
+.mat-select-panel.mat-primary{
+  margin-top: 1.9em;
+}
